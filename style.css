@@ -9,7 +9,7 @@
 
 body{
     font-family: 'MuseoModerno', cursive;
-    background-image: url(/background.jpg);
+    background-image: url(background.jpg);
     background-size: cover;
     color: white;
 }
@@ -41,7 +41,7 @@ body{
 .food{
     height: 5.3vmin;
     width: 4vmin;
-    background-image: url(/egg.png);
+    background-image: url(egg.png);
     background-size: cover;
     box-shadow: rgb(255, 255, 255) -2px 5px 10px;
     border-radius: 50%;
@@ -102,7 +102,7 @@ button{
     
 }
 .on{
-    background-image: url(/off.png);
+    background-image: url(off.png);
     background-size: 3vw 3vw; 
     background-repeat: no-repeat;
     background-position: center;
@@ -110,7 +110,7 @@ button{
 
 }
 .off{
-    background-image: url(/on.png);
+    background-image: url(on.png);
     background-size: 3vw 3vw; 
     background-repeat: no-repeat;
     background-position: center;
