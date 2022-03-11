@@ -144,6 +144,7 @@ button{
     width: 8vw;
     height: 4vw;
     font-weight: bold;
+    text-align: center;
 }
 
 input[type=number]::-webkit-outer-spin-button, 
