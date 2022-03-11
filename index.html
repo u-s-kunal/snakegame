@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/egg.png" type="image/x-icon">
+    <title>The Snake Bite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <h1>The Snake Game</h1> -->
+    <div class="container">
+        <div id="board"></div>
+        <div class="score">
+            <div id="scoreBox">Score: 000</div>
+            <div id="hiScoreBox">HiScore: 000</div>
+        </div>
+        <div class="buttons">
+            <button id="musicBtn" class="on" ></button>
+            <!-- <button class="off" onclick="musicSound.pause();"></button> -->
+
+
+            <button class="btn" id="pause"> Pause</button>
+            <button class="btn" id="play"> Play</button>
+
+        </div>
+        <label for="speed" style="font-size:2vw;">Enter your speed: </label><br>
+        <input type="number" name="num" id="Number" min="1" max="100"> 
+        <button class="submit" id="submit"> Submit</button>
+
+
+
+    </div>
+
+    <script src="/snake.js"></script>
+</body>
+
+</html>
