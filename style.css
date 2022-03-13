@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@389&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'MuseoModerno', cursive;
+    background-image: url(/background.jpg);
+    background-size: cover;
+    color: white;
+}
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    /* background-color: black; */
+
+}
+
+
+#board{
+    height: 90vmin;
+    width: 90vmin;
+    background-color: rgba(101, 72, 230, 0.24);
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    box-shadow: 0px 0px 3vmin #d82828, inset  0px 0px 4vmin rgb(0, 140, 255), #b92323 0px 0px 30px ,inset  0px 0px 3vmin white;
+    border-radius: 50px;
+}
+
+.food{
+    height: 5.3vmin;
+    width: 4vmin;
+    background-image: url(/egg.png);
+    background-size: cover;
+    box-shadow: rgb(255, 255, 255) -2px 5px 10px;
+    border-radius: 50%;
+    
+}
+
+.head{
+   background-color: red;
+   box-shadow: 0px 0px 1vmin red, inset  0px 0px 1vmin rgb(255, 255, 255), red 0px 0px 1vmin ,inset  0px 0px 1vmin white;
+   background-size: cover;
+    border-radius: 10px;
+}
+.snake{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px #a02da1, inset  0px 0px 1vmin rgb(0, 140, 255), #a02da1 0px 0px 1vmin ,inset  0px 0px 10px white;
+    border-radius: 50%;
+
+}
+
+#scoreBox{
+    box-shadow: 0px 0px 1vmin #a02da1, inset  0px 0px 1vmin rgb(0, 140, 255), #a02da1 0px 0px 10px ,inset  0px 0px 1vmin white;
+    font-size: 3vw;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+#hiScoreBox{
+    box-shadow: 0px 0px 1vmin #389602, inset  0px 0px 1vmin rgb(0, 140, 255), #389602 0px 0px 1vmin ,inset  0px 0px 1vmin white;
+    font-size: 3vw;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+button{
+    box-shadow: 0px 0px 1vmin #a02da1, inset  0px 0px 1vmin rgb(0, 140, 255), #a02da1 0px 0px 10px ,inset  0px 0px 1vmin white;
+    background-color: transparent;
+    color: white;
+    width: 5vw;
+    height: 5vw;
+    margin: 10px;
+    border-radius: 12px;
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    border: 0;
+    background-color: #212121;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+    
+}
+button::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+           #488cfb,
+           #29dbbc,
+           #ddf505,
+           #ff9f0e,
+           #e440bb,
+           #655adc,
+           #488cfb
+       );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+   }
+   
+   button:hover::after {
+    animation-play-state: running;
+   }
+   
+   @keyframes rotate-hue {
+    to {
+     filter: hue-rotate(1turn);
+    }
+   }
+   
+   button,
+   button::after {
+    box-sizing: border-box;
+   }
+   
+   button:active {
+    --border-width: 5px;
+   }
+
+
+
+.buttons{
+    /* background-color: #389602; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.on{
+    background-image: url(/off.png);
+    background-size: 3vw 3vw; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+.off{
+    background-image: url(/on.png);
+    background-size: 3vw 3vw; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn{
+    /* border-radius: 20%; */
+    width: 8vw;
+    height: 4vw;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+#Number{
+    height: 5vw;
+    width: 8vw;
+    color: white;
+    background-color: transparent;
+    box-shadow: 0px 0px 1vmin #8a0707, inset  0px 0px 1vmin rgb(2, 64, 116), #a403a7 0px 0px 10px ,inset  0px 0px 1vmin white;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+#submit{
+    /* background-color: #389602; */
+    font-size: 1.5vw;
+    padding: 10px;
+    border-radius: 10px;
+    width: 8vw;
+    height: 4vw;
+    font-weight: bold;
+}
+
+
+input[type=number]::-webkit-outer-spin-button, 
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button !important;
+  position: absolute;
+  top: 0;
+  height: 60px;
+  padding: 5px;
+
+
+}
+
