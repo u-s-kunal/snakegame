@@ -32,10 +32,10 @@ body{
     width: 90vmin;
     background-color: rgba(101, 72, 230, 0.24);
     display: grid;
-    grid-template-columns: repeat(20,1fr);
-    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(30,1fr);
     box-shadow: 0px 0px 3vmin #d82828, inset  0px 0px 4vmin rgb(0, 140, 255), #b92323 0px 0px 30px ,inset  0px 0px 3vmin white;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .food{
