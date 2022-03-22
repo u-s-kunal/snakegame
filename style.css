@@ -39,8 +39,8 @@ body{
 }
 
 .food{
-    height: 5.3vmin;
-    width: 4vmin;
+    height: 3.3vmin;
+    width: 2vmin;
     background-image: url(egg.png);
     background-size: cover;
     box-shadow: rgb(255, 255, 255) -2px 5px 10px;
