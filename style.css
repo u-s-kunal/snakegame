@@ -39,8 +39,8 @@ body{
 }
 
 .food{
-    height: 3.3vmin;
-    width: 2vmin;
+    height: 4.3vmin;
+    width: 3vmin;
     background-image: url(rat.ico);
     background-size: cover;
     box-shadow: rgb(255, 255, 255) -2px 5px 10px;
