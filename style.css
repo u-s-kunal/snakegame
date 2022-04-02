@@ -41,7 +41,7 @@ body{
 .food{
     height: 3.3vmin;
     width: 2vmin;
-    background-image: url(egg.png);
+    background-image: url(rat.ico);
     background-size: cover;
     box-shadow: rgb(255, 255, 255) -2px 5px 10px;
     border-radius: 50%;
