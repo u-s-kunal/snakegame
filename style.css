@@ -43,7 +43,7 @@ body{
     width: 3vmin;
     background-image: url(rat.ico);
     background-size: cover;
-    box-shadow: rgb(255, 255, 255) -2px 5px 10px;
+/*     box-shadow: rgb(255, 255, 255) -2px 5px 10px; */
     border-radius: 50%;
     
 }
